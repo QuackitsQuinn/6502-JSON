@@ -1,0 +1,1628 @@
+[
+    {
+        "name": "ADC",
+        "long_name": "ADd with Carry",
+        "type": "arithmatic",
+        "flags": [
+            "negative",
+            "overflow",
+            "zero",
+            "carry"
+        ],
+        "operands": [
+            {
+                "opcode": 105,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "IMMEDIATE"
+            },
+            {
+                "opcode": 101,
+                "cycles": 3,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE"
+            },
+            {
+                "opcode": 117,
+                "cycles": 4,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE_X"
+            },
+            {
+                "opcode": 109,
+                "cycles": 4,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "ABSOLUTE"
+            },
+            {
+                "opcode": 125,
+                "cycles": 4,
+                "page_cross_incr": 1,
+                "length": 3,
+                "addr_mode": "ABSOLUTE_X"
+            },
+            {
+                "opcode": 121,
+                "cycles": 4,
+                "page_cross_incr": 1,
+                "length": 3,
+                "addr_mode": "ABSOLUTE_Y"
+            },
+            {
+                "opcode": 97,
+                "cycles": 6,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "INDIRECT_X"
+            },
+            {
+                "opcode": 113,
+                "cycles": 5,
+                "page_cross_incr": 1,
+                "length": 2,
+                "addr_mode": "INDIRECT_Y"
+            }
+        ]
+    },
+    {
+        "name": "AND",
+        "long_name": "bitwise AND with accumulator",
+        "type": "arithmatic",
+        "flags": [
+            "negative",
+            "zero"
+        ],
+        "operands": [
+            {
+                "opcode": 41,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "IMMEDIATE"
+            },
+            {
+                "opcode": 37,
+                "cycles": 3,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE"
+            },
+            {
+                "opcode": 53,
+                "cycles": 4,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE_X"
+            },
+            {
+                "opcode": 45,
+                "cycles": 4,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "ABSOLUTE"
+            },
+            {
+                "opcode": 61,
+                "cycles": 4,
+                "page_cross_incr": 1,
+                "length": 3,
+                "addr_mode": "ABSOLUTE_X"
+            },
+            {
+                "opcode": 57,
+                "cycles": 4,
+                "page_cross_incr": 1,
+                "length": 3,
+                "addr_mode": "ABSOLUTE_Y"
+            },
+            {
+                "opcode": 33,
+                "cycles": 6,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "INDIRECT_X"
+            },
+            {
+                "opcode": 49,
+                "cycles": 5,
+                "page_cross_incr": 1,
+                "length": 2,
+                "addr_mode": "INDIRECT_Y"
+            }
+        ]
+    },
+    {
+        "name": "ASL",
+        "long_name": "Arithmatic Shift Left",
+        "type": "arithmatic",
+        "flags": [
+            "negative",
+            "zero",
+            "carry"
+        ],
+        "operands": [
+            {
+                "opcode": 10,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 1,
+                "addr_mode": "IMPLIED"
+            },
+            {
+                "opcode": 6,
+                "cycles": 5,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE"
+            },
+            {
+                "opcode": 22,
+                "cycles": 6,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE_X"
+            },
+            {
+                "opcode": 14,
+                "cycles": 6,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "ABSOLUTE"
+            },
+            {
+                "opcode": 30,
+                "cycles": 7,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "ABSOLUTE_X"
+            }
+        ]
+    },
+    {
+        "name": "BIT",
+        "long_name": "test BITs",
+        "type": "logical",
+        "flags": [
+            "negative",
+            "overflow",
+            "zero"
+        ],
+        "operands": [
+            {
+                "opcode": 36,
+                "cycles": 3,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE"
+            },
+            {
+                "opcode": 44,
+                "cycles": 4,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "ABSOLUTE"
+            }
+        ]
+    },
+    {
+        "name": "BPL",
+        "long_name": "Branch on PLus",
+        "type": "branch",
+        "flags": [],
+        "operands": [
+            {
+                "opcode": 16,
+                "cycles": 2,
+                "page_cross_incr": 1,
+                "length": 2,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "BMI",
+        "long_name": "Branch on MInus",
+        "type": "branch",
+        "flags": [],
+        "operands": [
+            {
+                "opcode": 48,
+                "cycles": 2,
+                "page_cross_incr": 1,
+                "length": 2,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "BVC",
+        "long_name": "Branch on oVerflow Clear",
+        "type": "branch",
+        "flags": [],
+        "operands": [
+            {
+                "opcode": 80,
+                "cycles": 2,
+                "page_cross_incr": 1,
+                "length": 2,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "BVS",
+        "long_name": "Branch on oVerflow Set",
+        "type": "branch",
+        "flags": [],
+        "operands": [
+            {
+                "opcode": 112,
+                "cycles": 2,
+                "page_cross_incr": 1,
+                "length": 2,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "BCC",
+        "long_name": "Branch on Carry Clear",
+        "type": "branch",
+        "flags": [],
+        "operands": [
+            {
+                "opcode": 144,
+                "cycles": 2,
+                "page_cross_incr": 1,
+                "length": 2,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "BCS",
+        "long_name": "Branch on Carry Set",
+        "type": "branch",
+        "flags": [],
+        "operands": [
+            {
+                "opcode": 176,
+                "cycles": 2,
+                "page_cross_incr": 1,
+                "length": 2,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "BNE",
+        "long_name": "Branch on Not Equal",
+        "type": "branch",
+        "flags": [],
+        "operands": [
+            {
+                "opcode": 208,
+                "cycles": 2,
+                "page_cross_incr": 1,
+                "length": 2,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "BEQ",
+        "long_name": "Branch on EQual",
+        "type": "branch",
+        "flags": [],
+        "operands": [
+            {
+                "opcode": 240,
+                "cycles": 2,
+                "page_cross_incr": 1,
+                "length": 2,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "BRK",
+        "long_name": "BReaK",
+        "type": "branch",
+        "flags": [
+            "interrupt_disable"
+        ],
+        "operands": [
+            {
+                "opcode": 0,
+                "cycles": 7,
+                "page_cross_incr": 0,
+                "length": 1,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "CMP",
+        "long_name": "CoMPare accumulator",
+        "type": "logical",
+        "flags": [
+            "negative",
+            "zero",
+            "carry"
+        ],
+        "operands": [
+            {
+                "opcode": 201,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "IMMEDIATE"
+            },
+            {
+                "opcode": 197,
+                "cycles": 3,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE"
+            },
+            {
+                "opcode": 213,
+                "cycles": 4,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE_X"
+            },
+            {
+                "opcode": 205,
+                "cycles": 4,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "ABSOLUTE"
+            },
+            {
+                "opcode": 221,
+                "cycles": 4,
+                "page_cross_incr": 1,
+                "length": 3,
+                "addr_mode": "ABSOLUTE_X"
+            },
+            {
+                "opcode": 217,
+                "cycles": 4,
+                "page_cross_incr": 1,
+                "length": 3,
+                "addr_mode": "ABSOLUTE_Y"
+            },
+            {
+                "opcode": 193,
+                "cycles": 6,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "INDIRECT_X"
+            },
+            {
+                "opcode": 209,
+                "cycles": 5,
+                "page_cross_incr": 1,
+                "length": 2,
+                "addr_mode": "INDIRECT_Y"
+            }
+        ]
+    },
+    {
+        "name": "CPX",
+        "long_name": "ComPare X register",
+        "type": "logical",
+        "flags": [
+            "negative",
+            "zero",
+            "carry"
+        ],
+        "operands": [
+            {
+                "opcode": 224,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "IMMEDIATE"
+            },
+            {
+                "opcode": 228,
+                "cycles": 3,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE"
+            },
+            {
+                "opcode": 236,
+                "cycles": 4,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "ABSOLUTE"
+            }
+        ]
+    },
+    {
+        "name": "CPY",
+        "long_name": "ComPare Y register",
+        "type": "logical",
+        "flags": [
+            "negative",
+            "zero",
+            "carry"
+        ],
+        "operands": [
+            {
+                "opcode": 192,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "IMMEDIATE"
+            },
+            {
+                "opcode": 196,
+                "cycles": 3,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE"
+            },
+            {
+                "opcode": 204,
+                "cycles": 4,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "ABSOLUTE"
+            }
+        ]
+    },
+    {
+        "name": "DEC",
+        "long_name": "DECrement memory",
+        "type": "arithmatic",
+        "flags": [
+            "negative",
+            "zero"
+        ],
+        "operands": [
+            {
+                "opcode": 198,
+                "cycles": 5,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE"
+            },
+            {
+                "opcode": 214,
+                "cycles": 6,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE_X"
+            },
+            {
+                "opcode": 206,
+                "cycles": 6,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "ABSOLUTE"
+            },
+            {
+                "opcode": 222,
+                "cycles": 7,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "ABSOLUTE_X"
+            }
+        ]
+    },
+    {
+        "name": "EOR",
+        "long_name": "bitwise Exclusive OR",
+        "type": "arithmatic",
+        "flags": [
+            "negative",
+            "zero"
+        ],
+        "operands": [
+            {
+                "opcode": 73,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "IMMEDIATE"
+            },
+            {
+                "opcode": 69,
+                "cycles": 3,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE"
+            },
+            {
+                "opcode": 85,
+                "cycles": 4,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE_X"
+            },
+            {
+                "opcode": 77,
+                "cycles": 4,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "ABSOLUTE"
+            },
+            {
+                "opcode": 93,
+                "cycles": 4,
+                "page_cross_incr": 1,
+                "length": 3,
+                "addr_mode": "ABSOLUTE_X"
+            },
+            {
+                "opcode": 89,
+                "cycles": 4,
+                "page_cross_incr": 1,
+                "length": 3,
+                "addr_mode": "ABSOLUTE_Y"
+            },
+            {
+                "opcode": 65,
+                "cycles": 6,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "INDIRECT_X"
+            },
+            {
+                "opcode": 81,
+                "cycles": 5,
+                "page_cross_incr": 1,
+                "length": 2,
+                "addr_mode": "INDIRECT_Y"
+            }
+        ]
+    },
+    {
+        "name": "CLC",
+        "long_name": "CLear Carry",
+        "type": "flag",
+        "flags": [
+            "carry"
+        ],
+        "operands": [
+            {
+                "opcode": 24,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 1,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "SEC",
+        "long_name": "SEt Carry",
+        "type": "flag",
+        "flags": [
+            "carry"
+        ],
+        "operands": [
+            {
+                "opcode": 56,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 1,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "CLI",
+        "long_name": "CLear Interrupt",
+        "type": "flag",
+        "flags": [
+            "interrupt_disable"
+        ],
+        "operands": [
+            {
+                "opcode": 88,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 1,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "SEI",
+        "long_name": "SEt Interrupt",
+        "type": "flag",
+        "flags": [
+            "interrupt_disable"
+        ],
+        "operands": [
+            {
+                "opcode": 120,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 1,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "CLV",
+        "long_name": "CLear oVerflow",
+        "type": "flag",
+        "flags": [
+            "overflow"
+        ],
+        "operands": [
+            {
+                "opcode": 184,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 1,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "CLD",
+        "long_name": "CLear Decimal",
+        "type": "flag",
+        "flags": [
+            "decimal_mode"
+        ],
+        "operands": [
+            {
+                "opcode": 216,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 1,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "SED",
+        "long_name": "SEt Decimal",
+        "type": "flag",
+        "flags": [
+            "decimal_mode"
+        ],
+        "operands": [
+            {
+                "opcode": 248,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 1,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "INC",
+        "long_name": "INCrement memory",
+        "type": "arithmatic",
+        "flags": [
+            "negative",
+            "zero"
+        ],
+        "operands": [
+            {
+                "opcode": 230,
+                "cycles": 5,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE"
+            },
+            {
+                "opcode": 246,
+                "cycles": 6,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE_X"
+            },
+            {
+                "opcode": 238,
+                "cycles": 6,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "ABSOLUTE"
+            },
+            {
+                "opcode": 254,
+                "cycles": 7,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "ABSOLUTE_X"
+            }
+        ]
+    },
+    {
+        "name": "JMP",
+        "long_name": "JuMP",
+        "type": "branch",
+        "flags": [],
+        "operands": [
+            {
+                "opcode": 76,
+                "cycles": 3,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "ABSOLUTE"
+            },
+            {
+                "opcode": 108,
+                "cycles": 5,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "INDIRECT"
+            }
+        ]
+    },
+    {
+        "name": "JSR",
+        "long_name": "Jump to SubRoutine",
+        "type": "branch",
+        "flags": [],
+        "operands": [
+            {
+                "opcode": 32,
+                "cycles": 6,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "ABSOLUTE"
+            }
+        ]
+    },
+    {
+        "name": "LDA",
+        "long_name": "LoaD Accumulator",
+        "type": "movement",
+        "flags": [
+            "negative",
+            "zero"
+        ],
+        "operands": [
+            {
+                "opcode": 169,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "IMMEDIATE"
+            },
+            {
+                "opcode": 165,
+                "cycles": 3,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE"
+            },
+            {
+                "opcode": 181,
+                "cycles": 4,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE_X"
+            },
+            {
+                "opcode": 173,
+                "cycles": 4,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "ABSOLUTE"
+            },
+            {
+                "opcode": 189,
+                "cycles": 4,
+                "page_cross_incr": 1,
+                "length": 3,
+                "addr_mode": "ABSOLUTE_X"
+            },
+            {
+                "opcode": 185,
+                "cycles": 4,
+                "page_cross_incr": 1,
+                "length": 3,
+                "addr_mode": "ABSOLUTE_Y"
+            },
+            {
+                "opcode": 161,
+                "cycles": 6,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "INDIRECT_X"
+            },
+            {
+                "opcode": 177,
+                "cycles": 5,
+                "page_cross_incr": 1,
+                "length": 2,
+                "addr_mode": "INDIRECT_Y"
+            }
+        ]
+    },
+    {
+        "name": "LDX",
+        "long_name": "LoaD X register",
+        "type": "movement",
+        "flags": [
+            "negative",
+            "zero"
+        ],
+        "operands": [
+            {
+                "opcode": 162,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "IMMEDIATE"
+            },
+            {
+                "opcode": 166,
+                "cycles": 3,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE"
+            },
+            {
+                "opcode": 182,
+                "cycles": 4,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE_Y"
+            },
+            {
+                "opcode": 174,
+                "cycles": 4,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "ABSOLUTE"
+            },
+            {
+                "opcode": 190,
+                "cycles": 4,
+                "page_cross_incr": 1,
+                "length": 3,
+                "addr_mode": "ABSOLUTE_Y"
+            }
+        ]
+    },
+    {
+        "name": "LDY",
+        "long_name": "LoaD Y register",
+        "type": "movement",
+        "flags": [
+            "negative",
+            "zero"
+        ],
+        "operands": [
+            {
+                "opcode": 160,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "IMMEDIATE"
+            },
+            {
+                "opcode": 164,
+                "cycles": 3,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE"
+            },
+            {
+                "opcode": 180,
+                "cycles": 4,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE_X"
+            },
+            {
+                "opcode": 172,
+                "cycles": 4,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "ABSOLUTE"
+            },
+            {
+                "opcode": 188,
+                "cycles": 4,
+                "page_cross_incr": 1,
+                "length": 3,
+                "addr_mode": "ABSOLUTE_X"
+            }
+        ]
+    },
+    {
+        "name": "LSR",
+        "long_name": "Logical Shift Right",
+        "type": "arithmatic",
+        "flags": [
+            "negative",
+            "zero",
+            "carry"
+        ],
+        "operands": [
+            {
+                "opcode": 74,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 1,
+                "addr_mode": "IMPLIED"
+            },
+            {
+                "opcode": 70,
+                "cycles": 5,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE"
+            },
+            {
+                "opcode": 86,
+                "cycles": 6,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE_X"
+            },
+            {
+                "opcode": 78,
+                "cycles": 6,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "ABSOLUTE"
+            },
+            {
+                "opcode": 94,
+                "cycles": 7,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "ABSOLUTE_X"
+            }
+        ]
+    },
+    {
+        "name": "NOP",
+        "long_name": "No OPeration",
+        "type": "movement",
+        "flags": [],
+        "operands": [
+            {
+                "opcode": 234,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 1,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "ORA",
+        "long_name": "bitwise OR with Accumulator",
+        "type": "arithmatic",
+        "flags": [
+            "negative",
+            "zero"
+        ],
+        "operands": [
+            {
+                "opcode": 9,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "IMMEDIATE"
+            },
+            {
+                "opcode": 5,
+                "cycles": 3,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE"
+            },
+            {
+                "opcode": 21,
+                "cycles": 4,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE_X"
+            },
+            {
+                "opcode": 13,
+                "cycles": 4,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "ABSOLUTE"
+            },
+            {
+                "opcode": 29,
+                "cycles": 4,
+                "page_cross_incr": 1,
+                "length": 3,
+                "addr_mode": "ABSOLUTE_X"
+            },
+            {
+                "opcode": 25,
+                "cycles": 4,
+                "page_cross_incr": 1,
+                "length": 3,
+                "addr_mode": "ABSOLUTE_Y"
+            },
+            {
+                "opcode": 1,
+                "cycles": 6,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "INDIRECT_X"
+            },
+            {
+                "opcode": 17,
+                "cycles": 5,
+                "page_cross_incr": 1,
+                "length": 2,
+                "addr_mode": "INDIRECT_Y"
+            }
+        ]
+    },
+    {
+        "name": "TAX",
+        "long_name": "Transfer Accumulator to X",
+        "type": "movement",
+        "flags": [
+            "negative",
+            "zero"
+        ],
+        "operands": [
+            {
+                "opcode": 170,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 1,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "TXA",
+        "long_name": "Transfer X to Accumulator",
+        "type": "movement",
+        "flags": [
+            "negative",
+            "zero"
+        ],
+        "operands": [
+            {
+                "opcode": 138,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 1,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "DEX",
+        "long_name": "DEcrement X",
+        "type": "movement",
+        "flags": [
+            "negative",
+            "zero"
+        ],
+        "operands": [
+            {
+                "opcode": 202,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 1,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "INX",
+        "long_name": "INcrement X",
+        "type": "movement",
+        "flags": [
+            "negative",
+            "zero"
+        ],
+        "operands": [
+            {
+                "opcode": 232,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 1,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "TAY",
+        "long_name": "Transfer Accumulator to Y",
+        "type": "movement",
+        "flags": [
+            "negative",
+            "zero"
+        ],
+        "operands": [
+            {
+                "opcode": 168,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 1,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "TYA",
+        "long_name": "Transfer Y to Accumulator",
+        "type": "movement",
+        "flags": [
+            "negative",
+            "zero"
+        ],
+        "operands": [
+            {
+                "opcode": 152,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 1,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "DEY",
+        "long_name": "DEcrement Y",
+        "type": "movement",
+        "flags": [
+            "negative",
+            "zero"
+        ],
+        "operands": [
+            {
+                "opcode": 136,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 1,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "INY",
+        "long_name": "INcrement Y",
+        "type": "movement",
+        "flags": [
+            "negative",
+            "zero"
+        ],
+        "operands": [
+            {
+                "opcode": 200,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 1,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "ROL",
+        "long_name": "ROtate Left",
+        "type": "arithmatic",
+        "flags": [
+            "negative",
+            "zero",
+            "carry"
+        ],
+        "operands": [
+            {
+                "opcode": 42,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 1,
+                "addr_mode": "IMPLIED"
+            },
+            {
+                "opcode": 38,
+                "cycles": 5,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE"
+            },
+            {
+                "opcode": 54,
+                "cycles": 6,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE_X"
+            },
+            {
+                "opcode": 46,
+                "cycles": 6,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "ABSOLUTE"
+            },
+            {
+                "opcode": 62,
+                "cycles": 7,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "ABSOLUTE_X"
+            }
+        ]
+    },
+    {
+        "name": "ROR",
+        "long_name": "ROtate Right",
+        "type": "arithmatic",
+        "flags": [
+            "negative",
+            "zero",
+            "carry"
+        ],
+        "operands": [
+            {
+                "opcode": 106,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 1,
+                "addr_mode": "IMPLIED"
+            },
+            {
+                "opcode": 102,
+                "cycles": 5,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE"
+            },
+            {
+                "opcode": 118,
+                "cycles": 6,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE_X"
+            },
+            {
+                "opcode": 110,
+                "cycles": 6,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "ABSOLUTE"
+            },
+            {
+                "opcode": 126,
+                "cycles": 7,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "ABSOLUTE_X"
+            }
+        ]
+    },
+    {
+        "name": "RTI",
+        "long_name": "ReTurn from Interrupt",
+        "type": "branch",
+        "flags": [
+            "interrupt_disable"
+        ],
+        "operands": [
+            {
+                "opcode": 64,
+                "cycles": 6,
+                "page_cross_incr": 0,
+                "length": 1,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "RTS",
+        "long_name": "ReTurn from Subroutine",
+        "type": "branch",
+        "flags": [],
+        "operands": [
+            {
+                "opcode": 96,
+                "cycles": 6,
+                "page_cross_incr": 0,
+                "length": 1,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "SBC",
+        "long_name": "SuBtract with Carry",
+        "type": "arithmatic",
+        "flags": [
+            "negative",
+            "overflow",
+            "zero",
+            "carry"
+        ],
+        "operands": [
+            {
+                "opcode": 233,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "IMMEDIATE"
+            },
+            {
+                "opcode": 229,
+                "cycles": 3,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE"
+            },
+            {
+                "opcode": 245,
+                "cycles": 4,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE_X"
+            },
+            {
+                "opcode": 237,
+                "cycles": 4,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "ABSOLUTE"
+            },
+            {
+                "opcode": 253,
+                "cycles": 4,
+                "page_cross_incr": 1,
+                "length": 3,
+                "addr_mode": "ABSOLUTE_X"
+            },
+            {
+                "opcode": 249,
+                "cycles": 4,
+                "page_cross_incr": 1,
+                "length": 3,
+                "addr_mode": "ABSOLUTE_Y"
+            },
+            {
+                "opcode": 225,
+                "cycles": 6,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "INDIRECT_X"
+            },
+            {
+                "opcode": 241,
+                "cycles": 5,
+                "page_cross_incr": 1,
+                "length": 2,
+                "addr_mode": "INDIRECT_Y"
+            }
+        ]
+    },
+    {
+        "name": "STA",
+        "long_name": "STore Accumulator",
+        "type": "movement",
+        "flags": [],
+        "operands": [
+            {
+                "opcode": 133,
+                "cycles": 3,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE"
+            },
+            {
+                "opcode": 149,
+                "cycles": 4,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE_X"
+            },
+            {
+                "opcode": 141,
+                "cycles": 4,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "ABSOLUTE"
+            },
+            {
+                "opcode": 157,
+                "cycles": 5,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "ABSOLUTE_X"
+            },
+            {
+                "opcode": 153,
+                "cycles": 5,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "ABSOLUTE_Y"
+            },
+            {
+                "opcode": 129,
+                "cycles": 6,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "INDIRECT_X"
+            },
+            {
+                "opcode": 145,
+                "cycles": 6,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "INDIRECT_Y"
+            }
+        ]
+    },
+    {
+        "name": "TXS",
+        "long_name": "Transfer X to Stack ptr",
+        "type": "movement",
+        "flags": [],
+        "operands": [
+            {
+                "opcode": 154,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 1,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "TSX",
+        "long_name": "Transfer Stack ptr to X",
+        "type": "movement",
+        "flags": [
+            "negative",
+            "zero"
+        ],
+        "operands": [
+            {
+                "opcode": 186,
+                "cycles": 2,
+                "page_cross_incr": 0,
+                "length": 1,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "PHA",
+        "long_name": "PusH Accumulator",
+        "type": "stack",
+        "flags": [],
+        "operands": [
+            {
+                "opcode": 72,
+                "cycles": 3,
+                "page_cross_incr": 0,
+                "length": 1,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "PLA",
+        "long_name": "PuLl Accumulator",
+        "type": "stack",
+        "flags": [
+            "negative",
+            "zero"
+        ],
+        "operands": [
+            {
+                "opcode": 104,
+                "cycles": 4,
+                "page_cross_incr": 0,
+                "length": 1,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "PHP",
+        "long_name": "PusH Processor status",
+        "type": "stack",
+        "flags": [],
+        "operands": [
+            {
+                "opcode": 8,
+                "cycles": 3,
+                "page_cross_incr": 0,
+                "length": 1,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "PLP",
+        "long_name": "PuLl Processor status",
+        "type": "stack",
+        "flags": [
+            "negative",
+            "zero",
+            "interrupt_disable",
+            "decimal_mode",
+            "overflow",
+            "carry"
+        ],
+        "operands": [
+            {
+                "opcode": 40,
+                "cycles": 4,
+                "page_cross_incr": 0,
+                "length": 1,
+                "addr_mode": "IMPLIED"
+            }
+        ]
+    },
+    {
+        "name": "STX",
+        "long_name": "STore X register",
+        "type": "movement",
+        "flags": [],
+        "operands": [
+            {
+                "opcode": 134,
+                "cycles": 3,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE"
+            },
+            {
+                "opcode": 150,
+                "cycles": 4,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE_Y"
+            },
+            {
+                "opcode": 142,
+                "cycles": 4,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "ABSOLUTE"
+            }
+        ]
+    },
+    {
+        "name": "STY",
+        "long_name": "STore Y register",
+        "type": "movement",
+        "flags": [],
+        "operands": [
+            {
+                "opcode": 132,
+                "cycles": 3,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE"
+            },
+            {
+                "opcode": 148,
+                "cycles": 4,
+                "page_cross_incr": 0,
+                "length": 2,
+                "addr_mode": "ZERO_PAGE_X"
+            },
+            {
+                "opcode": 140,
+                "cycles": 4,
+                "page_cross_incr": 0,
+                "length": 3,
+                "addr_mode": "ABSOLUTE"
+            }
+        ]
+    }
+]
